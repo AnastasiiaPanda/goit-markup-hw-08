@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.list,
+.connection,
+.benefit-list,
+.feature-list,
+.team__list,
+.criteria,
+.portfolio,
+.social-list,
+.clients-list {
+  list-style: none;
+}

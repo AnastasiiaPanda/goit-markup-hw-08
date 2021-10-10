@@ -1,0 +1,37 @@
+.site-nav,
+.contact-list {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child),
+.contact-list .connection:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact-list .contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.container-head {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #ececec;
+}
+
+.all-nav {
+  display: flex;
+  align-items: center;
+}
