@@ -407,6 +407,18 @@ html {
   margin-bottom: 16px;
 }
 
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .team-wrapper {
   padding: 30px 0;
 }
