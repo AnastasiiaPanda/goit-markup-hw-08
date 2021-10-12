@@ -4,7 +4,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bg-img.jpg);
+    url(../images/mob/hero_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,13 +12,43 @@
   padding: 200px 0;
   max-width: 1600px;
   margin: 0 auto;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/mob/hero_mob@2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/tablet/hero_tab.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/desctop/hero_des.jpg);
+  }
   &__title {
     color: var(--white-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+    // font-size: 44px;
+    // line-height: 1.36;
     text-transform: uppercase;
     margin-bottom: 30px;
+    font-size: 26px;
+    line-height: (42/26);
+    text-align: center;
+    letter-spacing: 0.06em;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: (60/44);
+    }
   }
 }

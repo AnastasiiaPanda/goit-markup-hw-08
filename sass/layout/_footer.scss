@@ -4,18 +4,48 @@
 }
 
 .footer {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
+  text-align: center;
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  // }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
   &-title {
     text-transform: uppercase;
     color: var(--white-color);
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 22px;
+    }
   }
   &-contacts {
-    margin-right: 70px;
+    // margin-right: 70px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-left: 76px;
+      margin-right: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+      // margin-left: 76px;
+      margin-right: 70px;
+    }
   }
+  &-all-contacts {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &-social-item {
+    margin-right: 10px;
+  }
+
   &-social-icon {
     fill: var(--white-color);
   }
@@ -31,24 +61,54 @@
       border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &-social-links {
-    margin-right: 93px;
+    // margin-right: 93px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-right: 89px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
   &-online-form {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
   }
   &-form {
-    margin-right: 12px;
+    // margin-right: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
   }
   &-input {
-    width: 358px;
+    // width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 16px 15px;
     background-color: transparent;
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
   &-btn {
     display: flex;

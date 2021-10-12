@@ -65,7 +65,7 @@
 
     <main>
       <!-- Герой -->
-      <!-- <section class="section hero">
+      <section class="section hero">
         <div class="container">
           <h1 class="hero__title">
             Эффективные решения
@@ -76,10 +76,10 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Преимущества -->
-      <!-- <section class="section benefit">
+      <section class="section benefit">
         <div class="container">
           <h2 class="visually-hidden">Преимущества компании</h2>
           <ul class="benefit-list">
@@ -125,40 +125,66 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Функции -->
-      <!-- <section class="section feature">
+      <section class="section feature">
         <div class="container">
           <h2 class="feature-title">Чем мы занимаемся</h2>
           <ul class="feature-list">
             <li class="feature-images">
-              <img
-                src="./images/box-1.jpg"
-                alt="Пример разработки декстопных приложений"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/box_1.jpg    1x,
+                    ./images/desctop/box_1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/box-1.jpg"
+                  alt="Пример разработки декстопных приложений"
+                />
+              </picture>
+
               <p class="feature-top-text">Десктопные приложения</p>
             </li>
             <li class="feature-images">
-              <img
-                src="./images/box-2.jpg"
-                alt="Пример разработки мобильных приложений"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/box_2.jpg    1x,
+                    ./images/desctop/box_2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/box-2.jpg"
+                  alt="Пример разработки декстопных приложений"
+                />
+              </picture>
               <p class="feature-top-text">Мобильные приложения</p>
             </li>
             <li class="feature-images">
-              <img
-                src="./images/box-3.jpg"
-                alt="Пример дизайнерских решений"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/box_3.jpg    1x,
+                    ./images/desctop/box_3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/box-3.jpg"
+                  alt="Пример разработки декстопных приложений"
+                />
+              </picture>
+
               <p class="feature-top-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Команда -->
 
@@ -167,11 +193,31 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__dudes">
-              <img
-                src="./images/img-1.jpg"
-                alt="Первый сотрудник"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/team_1.jpg    1x,
+                    ./images/desctop/team_1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team_1.jpg    1x,
+                    ./images/tablet/team_1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mob/team_1.jpg    1x,
+                    ./images/mob/team_1@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/desctop/team_1.jpg" alt="Первый сотрудник" />
+              </picture>
+
               <div class="team-wrapper">
                 <h3 class="team-employee-name">Игорь Демьяненко</h3>
                 <p class="team-employoee-position">Product Designer</p>
@@ -209,11 +255,31 @@
             </li>
 
             <li class="team__dudes">
-              <img
-                src="./images/img-2.jpg"
-                alt="Второй сотрудник"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/team_2.jpg    1x,
+                    ./images/desctop/team_2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team_2.jpg    1x,
+                    ./images/tablet/team_2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mob/team_2.jpg    1x,
+                    ./images/mob/team_2@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/desctop/team_2.jpg" alt="Второй сотрудник" />
+              </picture>
+
               <div class="team-wrapper">
                 <h3 class="team-employee-name">Ольга Репина</h3>
                 <p class="team-employoee-position">Frontend Developer</p>
@@ -250,11 +316,30 @@
               </div>
             </li>
             <li class="team__dudes">
-              <img
-                src="./images/img-3.jpg"
-                alt="Третий сотрудник"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/team_3.jpg    1x,
+                    ./images/desctop/team_3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team_3.jpg    1x,
+                    ./images/tablet/team_3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mob/team_3.jpg    1x,
+                    ./images/mob/team_3@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/desctop/team_3.jpg" alt="Третий сотрудник" />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="team-employee-name">Николай Тарасов</h3>
                 <p class="team-employoee-position">Marketing</p>
@@ -291,11 +376,34 @@
               </div>
             </li>
             <li class="team__dudes">
-              <img
-                src="./images/img-4.jpg"
-                alt="Четвертый сотрудник"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/team_4.jpg    1x,
+                    ./images/desctop/team_4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team_4.jpg    1x,
+                    ./images/tablet/team_4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mob/team_4.jpg    1x,
+                    ./images/mob/team_4@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/desctop/team_4.jpg"
+                  alt="Четвертый сотрудник"
+                />
+              </picture>
+
               <div class="team-wrapper">
                 <h3 class="team-employee-name">Михаил Ермаков</h3>
                 <p class="team-employoee-position">UI Designer</p>
@@ -337,7 +445,7 @@
 
       <!-- Постоянные клиенты -->
 
-      <!-- <section class="section clients">
+      <section class="section clients">
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list">
@@ -385,69 +493,72 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Футер -->
-    <!-- <footer class="full-footer">
+    <footer class="full-footer">
       <div class="container footer">
-        <div class="footer-contacts">
-          <a href="./index.html" class="logo">
-            Web
-            <span class="logo_color_white">Studio</span>
-          </a>
+        <div class="footer-all-contacts">
+          <div class="footer-contacts">
+            <a href="./index.html" class="logo">
+              Web
+              <span class="logo_color_white">Studio</span>
+            </a>
 
-          <address class="address">
-            <p class="address-details">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="contact list">
-              <li class="contact-details">
-                <a href="mailto:info@example.com" class="mail-footer">
-                  info@example.com
+            <address class="address">
+              <p class="address-details">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="contact list">
+                <li class="contact-details">
+                  <a href="mailto:info@example.com" class="mail-footer">
+                    info@example.com
+                  </a>
+                </li>
+                <li class="contact-details">
+                  <a href="tel:+380961111111" class="phone-footer">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-social-links">
+            <h3 class="footer-title">присоединяйтесь</h3>
+
+            <ul class="social-list">
+              <li class="footer-social-item">
+                <a href="" class="footer-social-link">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram-1"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="contact-details">
-                <a href="tel:+380961111111" class="phone-footer">
-                  +38 096 111 11 11
+              <li class="footer-social-item">
+                <a href="" class="footer-social-link">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" class="footer-social-link">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook-3"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" class="footer-social-link">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin-4"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
 
-        <div class="footer-social-links">
-          <h3 class="footer-title">присоединяйтесь</h3>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="" class="footer-social-link">
-                <svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="" class="footer-social-link">
-                <svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="" class="footer-social-link">
-                <svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook-3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="" class="footer-social-link">
-                <svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin-4"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
         <div class="footer-subscripe">
           <h3 class="footer-title">Подпишитесь на рассылку</h3>
           <div class="footer-online-form">
@@ -468,7 +579,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
