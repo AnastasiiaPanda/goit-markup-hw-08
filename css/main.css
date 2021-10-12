@@ -29,7 +29,11 @@ p {
 .criteria,
 .portfolio,
 .social-list,
-.clients-list {
+.clients-list,
+.mob-menu-list,
+.mob-menu-tel,
+.mob-menu-mail,
+.mob-menu-social-link {
   list-style: none;
 }
 
@@ -127,7 +131,7 @@ html {
 
 .site-nav,
 .contact-list {
-  display: flex;
+  display: none;
 }
 
 .site-nav .item:not(:last-child),
@@ -150,7 +154,8 @@ html {
 .container-head {
   display: flex;
   align-items: center;
-  width: 1200px;
+  justify-content: space-between;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -163,12 +168,79 @@ html {
   align-items: center;
 }
 
+.mob-menu {
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 15px 0 40px;
+}
+
+.mob-menu-btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.mob-menu-list {
+  margin-top: 48px;
+  margin-bottom: 302px;
+}
+
+.mob-menu-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+
+.mob-menu-item:not(last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-tel {
+  font-size: 34px;
+  line-height: 1.17647;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-bottom: 32px;
+  display: block;
+}
+
+.mob-menu-mail {
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 64px;
+  display: block;
+}
+
+.mob-menu-social-link {
+  display: inline;
+  font-size: 18px;
+  line-height: 1.22222;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   text-decoration: none;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
+  margin: 16px 15px;
 }
 
 .logo_color_black {
@@ -326,6 +398,12 @@ html {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/hero_des.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/hero_des@2x.jpg);
   }
 }
 
