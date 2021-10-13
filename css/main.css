@@ -33,7 +33,7 @@ p {
 .mob-menu-list,
 .mob-menu-tel,
 .mob-menu-mail,
-.mob-menu-social-link {
+.mob-menu-socials {
   list-style: none;
 }
 
@@ -287,6 +287,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 5;
 }
 
 .mob-menu-btn-close {
@@ -314,6 +315,17 @@ html {
 
 .mob-menu-link.current {
   color: var(--accent-color);
+}
+
+.mob-menu-links,
+.mob-menu-number {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.mob-menu-com {
+  text-decoration: none;
+  color: #757575;
 }
 
 .mob-menu-list {
@@ -903,6 +915,7 @@ html {
   top: 0;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 200ms linear;
+  z-index: 5;
 }
 
 .is-hidden {

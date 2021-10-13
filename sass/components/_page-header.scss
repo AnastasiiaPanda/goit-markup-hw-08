@@ -138,6 +138,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 5;
 }
 
 .mob-menu-btn-close {
@@ -167,6 +168,17 @@
   }
 }
 
+.mob-menu-links,
+.mob-menu-number {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.mob-menu-com {
+  text-decoration: none;
+  color: #757575;
+}
+
 .mob-menu-list {
   margin-top: 48px;
 }
@@ -190,11 +202,9 @@
   font-size: 34px;
   line-height: (40/34);
   letter-spacing: 0.02em;
-
   color: #2196f3;
   margin-bottom: 32px;
   display: block;
-  // text-decoration: none;
 }
 
 .mob-menu-mail {
