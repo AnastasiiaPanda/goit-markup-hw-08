@@ -29,11 +29,12 @@
     // margin-right: 70px;
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
-      margin-left: 76px;
+      // margin-left: 76px;
       margin-right: 165px;
     }
     @media screen and (min-width: 1200px) {
       // margin-left: 76px;
+      margin: 0;
       margin-right: 70px;
     }
   }
@@ -64,10 +65,10 @@
     // margin-right: 93px;
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
-      margin-right: 89px;
+      // margin-right: 89px;
     }
     @media screen and (min-width: 1200px) {
-      margin-right: 93px;
+      // margin-right: 93px;
     }
   }
   &-online-form {
@@ -116,6 +117,9 @@
   }
   &-send-icon {
     margin-left: 10px;
+  }
+  &-subscripe {
+    margin-left: auto;
   }
 }
 

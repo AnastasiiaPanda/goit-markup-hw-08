@@ -1,6 +1,6 @@
 .modal {
-  width: 528px;
-  height: 581px;
+  min-width: 450px;
+  max-width: 528px;
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -95,7 +95,7 @@
 }
 
 .check-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
